@@ -6,11 +6,11 @@ export default function NavBar() {
       <div>
         <h1>Stranger's Things!</h1>
         <div className="nav">
-          <Link to="/" className="butt" >
+          <Link to="/Home" className="butt" >
             Home
           </Link>
-          <Link to="/Login" className="butt">
-            Sign in
+          <Link to="/" className="butt">
+            Log out
           </Link>
         </div>
       </div>

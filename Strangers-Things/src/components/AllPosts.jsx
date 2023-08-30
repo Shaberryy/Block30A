@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import React from "react";
 import { fetchAllPosts } from "../assets/API/index.js";
 
 export default function AllPosts(){
