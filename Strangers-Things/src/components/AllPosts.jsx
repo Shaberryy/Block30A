@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { fetchAllPosts } from "../assets/API/index.js";
 
 export default function AllPosts(){
     const [posts, setPosts] = useState([]);
@@ -20,7 +21,19 @@ export default function AllPosts(){
     )
     : posts;
     return(
-        <h1>Looking for something specific?</h1>
-
+        <>
+        {/* search bar */}
+        <h4>Looking for something specific?</h4>
+        <div>
+            <label>
+                Search:{" "}
+            </label>
+            <input
+                type="text"
+                placeholder="search"
+                onChange={(e) => setSearchParam(e.target.value.toLowerCase())}
+            />
+        </div>
+        </>
     )
 };
